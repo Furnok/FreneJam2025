@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class S_UIMenuManager : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private GameObject contentUIParent;
-    [SerializeField] private GameObject contentWorldParent;
-
     [Header("Input")]
     [SerializeField] private RSE_StartGame rseStartGame;
     [SerializeField] private RSE_QuitGame rseQuitGame;
 
     [Header("Output")]
     [SerializeField] private RSE_ResetCursor rseResetCursor;
+    [SerializeField] private RSE_Menu rseMenu;
+    [SerializeField] private RSE_Game rseGame;
 
     private void OnEnable()
     {
@@ -28,8 +26,8 @@ public class S_UIMenuManager : MonoBehaviour
     private void StartGame()
     {
         rseResetCursor.Call();
-        contentUIParent.SetActive(false);
-        contentWorldParent.SetActive(true);
+        rseMenu.Call(false);
+        rseGame.Call(true);
     }
 
     private void QuitGame()
