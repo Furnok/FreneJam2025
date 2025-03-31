@@ -8,6 +8,9 @@ public class S_ShowGame : MonoBehaviour
     [Header("Input")]
     [SerializeField] private RSE_Game rseGame;
 
+    [Header("Output")]
+    [SerializeField] private SSO_MainMenuMode ssoMainMenuMode;
+
     private void OnEnable()
     {
         rseGame.action += HandleGame;
@@ -16,6 +19,11 @@ public class S_ShowGame : MonoBehaviour
     private void OnDisable()
     {
         rseGame.action -= HandleGame;
+    }
+
+    private void Awake()
+    {
+        contentGame.SetActive(!ssoMainMenuMode.Value);
     }
 
     private void HandleGame(bool value)

@@ -1,29 +1,29 @@
 using UnityEngine;
 
-public class S_UIMenuManager : MonoBehaviour
+public class S_UIMainMenuManager : MonoBehaviour
 {
     [Header("Input")]
-    [SerializeField] private RSE_ResumeGame rseResumeGame;
+    [SerializeField] private RSE_StartGame rseStartGame;
 
     [Header("Output")]
     [SerializeField] private RSE_ResetCursor rseResetCursor;
-    [SerializeField] private RSE_Menu rseMenu;
+    [SerializeField] private RSE_MainMenu rseMainMenu;
     [SerializeField] private RSE_Game rseGame;
 
     private void OnEnable()
     {
-        rseResumeGame.action += ResumeGame;
+        rseStartGame.action += StartGame;
     }
 
     private void OnDisable()
     {
-        rseResumeGame.action -= ResumeGame;
+        rseStartGame.action -= StartGame;
     }
 
-    private void ResumeGame()
+    private void StartGame()
     {
         rseResetCursor.Call();
-        rseMenu.Call();
+        rseMainMenu.Call(false);
         rseGame.Call(true);
     }
 }
