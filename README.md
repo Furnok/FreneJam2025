@@ -2,7 +2,7 @@
 Shadow Strike – Stealth Game with Input Lag
 
 Core Concept:
-You play as a futuristic ninja or spy infiltrating a high-security facility. However, due to a cybernetic malfunction, all your movements and actions have a 1-second delay. You must anticipate guard movements, time your actions carefully, and use tools to outsmart enemies.
+- You play as a futuristic ninja or spy infiltrating a high-security facility. However, due to a cybernetic malfunction, all your movements and actions have a 1-second delay. You must anticipate guard movements, time your actions carefully, and use tools to outsmart enemies.
 
 Core Mechanics:
 
