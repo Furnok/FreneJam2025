@@ -21,9 +21,9 @@ public class S_ShowGame : MonoBehaviour
         rseGame.action -= HandleGame;
     }
 
-    private void Awake()
+    private void Start()
     {
-        contentGame.SetActive(!ssoMainMenuMode.Value);
+        rseGame.Call(!ssoMainMenuMode.Value);
     }
 
     private void HandleGame(bool value)

@@ -21,9 +21,9 @@ public class S_ShowMainMenu : MonoBehaviour
         rseMainMenu.action -= HandleMainMenu;
     }
 
-    private void Awake()
+    private void Start()
     {
-        contentMainMenu.SetActive(ssoMainMenuMode.Value);
+        rseMainMenu.Call(ssoMainMenuMode.Value);
     }
 
     private void HandleMainMenu(bool value)
