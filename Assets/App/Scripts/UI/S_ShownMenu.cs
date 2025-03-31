@@ -35,8 +35,8 @@ public class S_ShownMenu : MonoBehaviour
     {
         if (!contentMenu.activeInHierarchy && isInGame)
         {
-            Time.timeScale = 0;
             contentMenu.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {

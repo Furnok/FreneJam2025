@@ -12,6 +12,12 @@ public static class S_Utils
         action?.Invoke();
     }
 
+    public static IEnumerator DelayRealtime(float delay, Action action = null)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        action?.Invoke();
+    }
+
     public static IEnumerator DelayFrame(Action action = null)
     {
         yield return null;
