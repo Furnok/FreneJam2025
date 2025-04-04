@@ -23,7 +23,7 @@ Core Mechanics:
 - You can use cover or hide to remain unseen.
 
 3. Gadgets & Tools
-- Hacking Device – Open doors.
+- Interruptor Device – Open doors.
 
 4. Level Design
 - One single scene (a large, multi-layered facility).
