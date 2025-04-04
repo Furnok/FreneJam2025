@@ -23,11 +23,10 @@ Core Mechanics:
 - You can use cover or hide to remain unseen.
 
 3. Gadgets & Tools
-- Hacking Device – Remotely disable cameras and doors.
-- Noise Generator – Throws sound to lure guards away.
+- Hacking Device – Open doors.
 
 4. Level Design
 - One single scene (a large, multi-layered facility).
 
 5. Enemies & AI
-- Guards react dynamically to sound and sight.
+- Guards react dynamically to sight.
