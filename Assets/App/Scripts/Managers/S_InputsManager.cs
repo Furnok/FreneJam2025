@@ -8,18 +8,18 @@ public class S_InputsManager : MonoBehaviour
 
     [Header("Output")]
     [SerializeField] private SSO_DelayInputs ssoDelayInputs;
-
-    private Coroutine coroutineMenu;
+    [SerializeField] private RSE_Move rseMove;
 
     public void Move(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
+            Vector2 move = context.ReadValue<Vector2>();
+            StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseMove.Call(move)));
         }
         else if (context.canceled)
         {
-
+            StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseMove.Call(Vector2.zero)));
         }
     }
 
@@ -27,13 +27,7 @@ public class S_InputsManager : MonoBehaviour
     {
         if (context.started)
         {
-            if (coroutineMenu != null)
-            {
-                StopCoroutine(coroutineMenu);
-                coroutineMenu = null;
-            }
-
-            coroutineMenu = StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseMenu.Call()));
+            StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseMenu.Call()));
         }
     }
 }

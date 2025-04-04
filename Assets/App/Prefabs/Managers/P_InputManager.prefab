@@ -185,3 +185,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rseMenu: {fileID: 11400000, guid: cf2c8b457296f4648a496a09bd255215, type: 2}
   ssoDelayInputs: {fileID: 11400000, guid: deaa33f6031c9f4428704feb4bf64a49, type: 2}
+  rseMove: {fileID: 11400000, guid: 0f225cd6fb802164fa0740bb4ce0841e, type: 2}
