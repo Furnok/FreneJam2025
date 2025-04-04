@@ -20,7 +20,7 @@ Core Mechanics:
 
 2. Vision & Stealth
 - Guards have vision cones, and you must predict their patrol routes.
-- You can hide in shadows, use cover, and distract enemies to remain unseen.
+- You can use cover or hide to remain unseen.
 
 3. Gadgets & Tools
 - Hacking Device – Remotely disable cameras and doors.
