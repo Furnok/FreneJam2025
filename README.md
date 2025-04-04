@@ -16,18 +16,17 @@ Core Concept:
 Core Mechanics:
 
 1. Movement & Input Delay
-- Every movement command (walking, jumping) happens 1 second after input.
+- Every movement command (walking, running) happens 1 second after input.
 
 2. Vision & Stealth
 - Guards have vision cones, and you must predict their patrol routes.
-- You can hide in shadows, use cover, and distract enemies to remain unseen.
+- You can use cover or hide to remain unseen.
 
 3. Gadgets & Tools
-- Hacking Device – Remotely disable cameras and doors.
-- Noise Generator – Throws sound to lure guards away.
+- Interruptor Device – Open doors.
 
 4. Level Design
 - One single scene (a large, multi-layered facility).
 
 5. Enemies & AI
-- Guards react dynamically to sound and sight.
+- Guards react dynamically to sight.
