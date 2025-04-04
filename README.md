@@ -16,7 +16,7 @@ Core Concept:
 Core Mechanics:
 
 1. Movement & Input Delay
-- Every movement command (walking, jumping) happens 1 second after input.
+- Every movement command (walking, running) happens 1 second after input.
 
 2. Vision & Stealth
 - Guards have vision cones, and you must predict their patrol routes.
