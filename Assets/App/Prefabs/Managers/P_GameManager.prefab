@@ -50,3 +50,4 @@ MonoBehaviour:
   rseMainMenu: {fileID: 11400000, guid: fa695a0035bf6014faf3a7718714b614, type: 2}
   rseMenu: {fileID: 11400000, guid: cf2c8b457296f4648a496a09bd255215, type: 2}
   rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}

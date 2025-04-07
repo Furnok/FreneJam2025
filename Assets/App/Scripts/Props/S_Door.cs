@@ -12,15 +12,23 @@ public class S_Door : MonoBehaviour
 
     [Header("Input")]
     [SerializeField] private RSE_OpenDoor rseOpenDoor;
+    [SerializeField] private RSE_Reset rseReset;
 
     private void OnEnable()
     {
         rseOpenDoor.action += HandleDoor;
+        rseReset.action += ResetScript;
     }
 
     private void OnDisable()
     {
         rseOpenDoor.action -= HandleDoor;
+        rseReset.action -= ResetScript;
+    }
+
+    private void ResetScript()
+    {
+        CloseDoor(0);
     }
 
     private void HandleDoor(bool value)
@@ -31,7 +39,7 @@ public class S_Door : MonoBehaviour
         }
         else
         {
-            CloseDoor();
+            CloseDoor(timeAnim);
         }
     }
 
@@ -41,9 +49,9 @@ public class S_Door : MonoBehaviour
         doorRight.DOLocalMoveX(3, timeAnim);
     }
 
-    private void CloseDoor()
+    private void CloseDoor(float time)
     {
-        doorLeft.DOLocalMoveX(-1, timeAnim);
-        doorRight.DOLocalMoveX(1, timeAnim);
+        doorLeft.DOLocalMoveX(-1, time);
+        doorRight.DOLocalMoveX(1, time);
     }
 }

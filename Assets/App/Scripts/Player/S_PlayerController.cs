@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class S_PlayerController : MonoBehaviour
 {
@@ -13,25 +13,42 @@ public class S_PlayerController : MonoBehaviour
     [Header("Input")]
     [SerializeField] private RSE_Move rseMove;
     [SerializeField] private RSO_Player rsoPlayer;
+    [SerializeField] private RSE_SpawnPoint rseSpawnPoint;
 
-    private Vector3 currentMove;
-    private List<GameObject> colliders = new();
+    private Vector3 currentMove = Vector3.zero;
+    private bool isSpawn = false;
 
     private void OnEnable()
     {
         rseMove.action += Move;
+        rseSpawnPoint.action += Spawn;
     }
 
     private void OnDisable()
     {
         rseMove.action -= Move;
+        rseSpawnPoint.action -= Spawn;
     }
 
     private void Update()
     {
-        rb.linearVelocity = new Vector3(currentMove.x * speed, transform.position.y, currentMove.y * speed);
+        if (isSpawn)
+        {
+            rb.linearVelocity = new Vector3(currentMove.x * speed, transform.position.y, currentMove.y * speed);
+
+            rsoPlayer.Value = transform.position;
+        }
+    }
+
+    private void Spawn(Vector3 pos)
+    {
+        isSpawn = false;
+
+        transform.position = pos;
 
         rsoPlayer.Value = transform.position;
+
+        isSpawn = true;
     }
 
     private void Move(Vector2 move)

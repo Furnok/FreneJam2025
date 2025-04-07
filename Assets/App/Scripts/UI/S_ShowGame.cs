@@ -7,8 +7,8 @@ public class S_ShowGame : MonoBehaviour
     [SerializeField] private int startIndexLevel;
 
     [Header("Reference")]
+    [SerializeField] private GameObject player;
     [SerializeField] private List<GameObject> contentGame;
-    [SerializeField] private List<GameObject> player;
 
     [Header("Input")]
     [SerializeField] private RSE_Game rseGame;
@@ -43,6 +43,14 @@ public class S_ShowGame : MonoBehaviour
     private void HandleGame(bool value)
     {
         contentGame[indexLevel].SetActive(value);
-        rsoPlayer.Value = player[indexLevel].transform.position;
+
+        if (value)
+        {
+            player.SetActive(true);
+        }
+        else
+        {
+            player.SetActive(false);
+        }
     }
 }

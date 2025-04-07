@@ -11,6 +11,7 @@ public class S_GameManager : MonoBehaviour
     [SerializeField] private RSE_MainMenu rseMainMenu;
     [SerializeField] private RSE_Menu rseMenu;
     [SerializeField] private RSE_Game rseGame;
+    [SerializeField] private RSE_Reset rseReset;
 
     private void OnEnable()
     {
@@ -27,9 +28,10 @@ public class S_GameManager : MonoBehaviour
     private void MainMenu()
     {
         rseResetCursor.Call();
-        rseGame.Call(false);
         rseMenu.Call();
+        rseReset.Call();
         rseMainMenu.Call(true);
+        rseGame.Call(false);
     }
 
     private void QuitGame()

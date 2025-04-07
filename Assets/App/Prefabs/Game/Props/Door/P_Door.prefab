@@ -50,6 +50,7 @@ MonoBehaviour:
   doorLeft: {fileID: 1215587693309012159}
   doorRight: {fileID: 1458159847326221336}
   rseOpenDoor: {fileID: 11400000, guid: 85b975ab9a311e048b15c5d3f8a3d9db, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
 --- !u!1001 &6927468737129677
 PrefabInstance:
   m_ObjectHideFlags: 0
