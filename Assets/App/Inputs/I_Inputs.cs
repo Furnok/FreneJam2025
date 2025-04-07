@@ -45,6 +45,15 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interraction"",
+                    ""type"": ""Button"",
+                    ""id"": ""3e38dacf-838e-416c-a185-e479a753573b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -188,6 +197,17 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3837a785-5e1e-4c4d-a475-2b76b76a3ca1"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interraction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1251,6 +1271,7 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_Move = m_Game.FindAction("Move", throwIfNotFound: true);
         m_Game_Menu = m_Game.FindAction("Menu", throwIfNotFound: true);
+        m_Game_Interraction = m_Game.FindAction("Interraction", throwIfNotFound: true);
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
@@ -1344,12 +1365,14 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
     private List<IGameActions> m_GameActionsCallbackInterfaces = new List<IGameActions>();
     private readonly InputAction m_Game_Move;
     private readonly InputAction m_Game_Menu;
+    private readonly InputAction m_Game_Interraction;
     public struct GameActions
     {
         private @I_Inputs m_Wrapper;
         public GameActions(@I_Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Game_Move;
         public InputAction @Menu => m_Wrapper.m_Game_Menu;
+        public InputAction @Interraction => m_Wrapper.m_Game_Interraction;
         public InputActionMap Get() { return m_Wrapper.m_Game; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1365,6 +1388,9 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
             @Menu.started += instance.OnMenu;
             @Menu.performed += instance.OnMenu;
             @Menu.canceled += instance.OnMenu;
+            @Interraction.started += instance.OnInterraction;
+            @Interraction.performed += instance.OnInterraction;
+            @Interraction.canceled += instance.OnInterraction;
         }
 
         private void UnregisterCallbacks(IGameActions instance)
@@ -1375,6 +1401,9 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
             @Menu.started -= instance.OnMenu;
             @Menu.performed -= instance.OnMenu;
             @Menu.canceled -= instance.OnMenu;
+            @Interraction.started -= instance.OnInterraction;
+            @Interraction.performed -= instance.OnInterraction;
+            @Interraction.canceled -= instance.OnInterraction;
         }
 
         public void RemoveCallbacks(IGameActions instance)
@@ -1669,6 +1698,7 @@ public partial class @I_Inputs: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
+        void OnInterraction(InputAction.CallbackContext context);
     }
     public interface IPlayerActions
     {

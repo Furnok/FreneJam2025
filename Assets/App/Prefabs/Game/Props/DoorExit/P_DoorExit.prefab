@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8494511265038813109}
   - component: {fileID: 3347772693544979872}
+  - component: {fileID: 6476479873509365714}
   m_Layer: 0
   m_Name: P_DoorExit
   m_TagString: Untagged
@@ -56,6 +57,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 3.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6476479873509365714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893300626940709451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57626957a23b37c4caf394d2e6a915d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagPlayer: Player
+  rseInterraction: {fileID: 11400000, guid: 766466c0d7f1d9d4286733a1ff606e5d, type: 2}
+  rsoItem: {fileID: 11400000, guid: b8ffd07c60a4f48459eee1ca1cbb602f, type: 2}
+  rseMainMenu: {fileID: 11400000, guid: fa695a0035bf6014faf3a7718714b614, type: 2}
+  rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
 --- !u!1001 &1397699440187491703
 PrefabInstance:
   m_ObjectHideFlags: 0

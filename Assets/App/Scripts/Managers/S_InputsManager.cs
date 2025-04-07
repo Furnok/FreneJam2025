@@ -9,6 +9,7 @@ public class S_InputsManager : MonoBehaviour
     [Header("Output")]
     [SerializeField] private SSO_DelayInputs ssoDelayInputs;
     [SerializeField] private RSE_Move rseMove;
+    [SerializeField] private RSE_Interraction rseInterraction;
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -28,6 +29,14 @@ public class S_InputsManager : MonoBehaviour
         if (context.started)
         {
             StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseMenu.Call()));
+        }
+    }
+
+    public void Interraction(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            StartCoroutine(S_Utils.DelayRealtime(ssoDelayInputs.Value, () => rseInterraction.Call()));
         }
     }
 }

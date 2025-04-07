@@ -166,6 +166,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 1e998031-aaf6-4a1d-bb56-1b6291eb0c84
     m_ActionName: 'Game/Menu[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3365998014386641287}
+        m_TargetAssemblyTypeName: S_InputsManager, Assembly-CSharp
+        m_MethodName: Interraction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3e38dacf-838e-416c-a185-e479a753573b
+    m_ActionName: 'Game/Interraction[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Game
@@ -186,3 +202,4 @@ MonoBehaviour:
   rseMenu: {fileID: 11400000, guid: cf2c8b457296f4648a496a09bd255215, type: 2}
   ssoDelayInputs: {fileID: 11400000, guid: deaa33f6031c9f4428704feb4bf64a49, type: 2}
   rseMove: {fileID: 11400000, guid: 0f225cd6fb802164fa0740bb4ce0841e, type: 2}
+  rseInterraction: {fileID: 11400000, guid: 766466c0d7f1d9d4286733a1ff606e5d, type: 2}

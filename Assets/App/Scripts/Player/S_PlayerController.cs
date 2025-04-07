@@ -1,4 +1,5 @@
-using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class S_PlayerController : MonoBehaviour
@@ -14,6 +15,7 @@ public class S_PlayerController : MonoBehaviour
     [SerializeField] private RSO_Player rsoPlayer;
 
     private Vector3 currentMove;
+    private List<GameObject> colliders = new();
 
     private void OnEnable()
     {
