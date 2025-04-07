@@ -163,8 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a678bb9430070469a85c721c1f1318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentGame: {fileID: 2039416447}
-  player: {fileID: 1619384817}
+  startIndexLevel: 0
+  contentGame:
+  - {fileID: 2039416447}
+  player:
+  - {fileID: 1619384817}
   rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
   rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
   ssoMainMenuMode: {fileID: 11400000, guid: 6af2a9df7fbfd764199d8fb4383b5864, type: 2}

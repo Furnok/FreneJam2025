@@ -1,10 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class S_ShowGame : MonoBehaviour
 {
+    [Header("Settings")]
+    [SerializeField] private int startIndexLevel;
+
     [Header("Reference")]
-    [SerializeField] private GameObject contentGame;
-    [SerializeField] private GameObject player;
+    [SerializeField] private List<GameObject> contentGame;
+    [SerializeField] private List<GameObject> player;
 
     [Header("Input")]
     [SerializeField] private RSE_Game rseGame;
@@ -13,9 +17,12 @@ public class S_ShowGame : MonoBehaviour
     [Header("Output")]
     [SerializeField] private SSO_MainMenuMode ssoMainMenuMode;
 
+    private int indexLevel = 0;
+
     private void Awake()
     {
         rsoPlayer.Value = new();
+        indexLevel = startIndexLevel;
     }
 
     private void OnEnable()
@@ -35,7 +42,7 @@ public class S_ShowGame : MonoBehaviour
 
     private void HandleGame(bool value)
     {
-        contentGame.SetActive(value);
-        rsoPlayer.Value = player.transform.position;
+        contentGame[indexLevel].SetActive(value);
+        rsoPlayer.Value = player[indexLevel].transform.position;
     }
 }
