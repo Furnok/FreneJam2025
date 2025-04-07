@@ -11,6 +11,8 @@ public class S_ShownMenu : MonoBehaviour
 
     [Header("Output")]
     [SerializeField] private RSE_ResetCursor rseResetCursor;
+    [SerializeField] private RSE_ShowMouseCursor rseShowMouseCursor;
+    [SerializeField] private RSE_HideMouseCursor rseHideMouseCursor;
 
     private bool isInGame;
 
@@ -35,12 +37,14 @@ public class S_ShownMenu : MonoBehaviour
     {
         if (!contentMenu.activeInHierarchy && isInGame)
         {
+            rseShowMouseCursor.Call();
             contentMenu.SetActive(true);
             Time.timeScale = 0;
         }
         else
         {
             rseResetCursor.Call();
+            rseHideMouseCursor.Call();
             Time.timeScale = 1;
             contentMenu.SetActive(false);
         }

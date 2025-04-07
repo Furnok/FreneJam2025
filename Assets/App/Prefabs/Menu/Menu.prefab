@@ -49,6 +49,8 @@ MonoBehaviour:
   rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
   rseMenu: {fileID: 11400000, guid: cf2c8b457296f4648a496a09bd255215, type: 2}
   rseResetCursor: {fileID: 11400000, guid: b7d38a12412f27844b08413bd0b8026f, type: 2}
+  rseShowMouseCursor: {fileID: 11400000, guid: 437f34f121ce5d9468823e0dd113e03d, type: 2}
+  rseHideMouseCursor: {fileID: 11400000, guid: 65625a4695bd7a445b598aca970f8a92, type: 2}
 --- !u!1001 &5931293680074105594
 PrefabInstance:
   m_ObjectHideFlags: 0

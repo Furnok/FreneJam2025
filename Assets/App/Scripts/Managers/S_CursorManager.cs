@@ -35,11 +35,6 @@ public class S_CursorManager : MonoBehaviour
         rseMouseLeaveUI.action -= MouseLeave;
     }
 
-    private void Start()
-    {
-        ShowMouseCursor();
-    }
-
     private void OnDeviceChange(InputDevice device, InputDeviceChange change)
     {
         if (device is Gamepad)

@@ -50,3 +50,4 @@ MonoBehaviour:
   rseResetCursor: {fileID: 11400000, guid: b7d38a12412f27844b08413bd0b8026f, type: 2}
   rseMouseEnterUI: {fileID: 11400000, guid: c6472746eb2001b449229a1a0c6286a3, type: 2}
   rseMouseLeaveUI: {fileID: 11400000, guid: 423cc4689871658469ab73a1dfc9cbc2, type: 2}
+  ssoMainMenuMode: {fileID: 11400000, guid: 6af2a9df7fbfd764199d8fb4383b5864, type: 2}

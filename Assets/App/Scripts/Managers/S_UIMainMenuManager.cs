@@ -9,10 +9,13 @@ public class S_UIMainMenuManager : MonoBehaviour
     [SerializeField] private RSE_ResetCursor rseResetCursor;
     [SerializeField] private RSE_MainMenu rseMainMenu;
     [SerializeField] private RSE_Game rseGame;
+    [SerializeField] private RSE_ShowMouseCursor rseShowMouseCursor;
 
     private void OnEnable()
     {
         rseStartGame.action += StartGame;
+
+        rseShowMouseCursor.Call();
     }
 
     private void OnDisable()
