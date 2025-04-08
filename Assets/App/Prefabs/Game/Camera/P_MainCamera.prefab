@@ -152,4 +152,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
   rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}

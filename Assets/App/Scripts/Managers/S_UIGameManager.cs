@@ -16,6 +16,6 @@ public class S_UIGameManager : MonoBehaviour
     {
         rseHideMouseCursor.Call();
         rsoItem.Value = false;
-        StartCoroutine(S_Utils.Delay(0.2f, () => rseSpawnPoint.Call(spawnPoint.position)));
+        StartCoroutine(S_Utils.Delay(0.1f, () => rseSpawnPoint.Call(spawnPoint.position)));
     }
 }

@@ -14,6 +14,7 @@ public class S_PlayerController : MonoBehaviour
     [SerializeField] private RSE_Move rseMove;
     [SerializeField] private RSO_Player rsoPlayer;
     [SerializeField] private RSE_SpawnPoint rseSpawnPoint;
+    [SerializeField] private RSE_Reset rseReset;
 
     private Vector3 currentMove = Vector3.zero;
     private bool isSpawn = false;
@@ -22,12 +23,14 @@ public class S_PlayerController : MonoBehaviour
     {
         rseMove.action += Move;
         rseSpawnPoint.action += Spawn;
+        rseReset.action += RestScript;
     }
 
     private void OnDisable()
     {
         rseMove.action -= Move;
         rseSpawnPoint.action -= Spawn;
+        rseReset.action -= RestScript;
     }
 
     private void Update()
@@ -40,14 +43,19 @@ public class S_PlayerController : MonoBehaviour
         }
     }
 
+    private void RestScript()
+    {
+        rb.linearVelocity = Vector3.zero;
+        transform.position = new Vector3(0, 1.5f, 0);
+        rsoPlayer.Value = transform.position;
+        isSpawn = false;
+    }
+
     private void Spawn(Vector3 pos)
     {
-        isSpawn = false;
-
+        rb.linearVelocity = Vector3.zero;
         transform.position = pos;
-
         rsoPlayer.Value = transform.position;
-
         isSpawn = true;
     }
 

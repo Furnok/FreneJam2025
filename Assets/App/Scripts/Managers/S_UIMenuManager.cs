@@ -27,6 +27,5 @@ public class S_UIMenuManager : MonoBehaviour
     {
         rseResetCursor.Call();
         rseMenu.Call();
-        rseGame.Call(true);
     }
 }
