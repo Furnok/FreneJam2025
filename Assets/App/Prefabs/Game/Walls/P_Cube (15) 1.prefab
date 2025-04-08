@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1728301834534071316}
   - component: {fileID: 5246937717538918738}
   - component: {fileID: 739137171503907719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: P_Cube (15) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2723085073815323476}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5, y: 3, z: 24}
   m_LocalScale: {x: 1, y: 5, z: 2}
   m_ConstrainProportionsScale: 0

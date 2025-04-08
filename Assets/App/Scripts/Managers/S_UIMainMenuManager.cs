@@ -26,7 +26,7 @@ public class S_UIMainMenuManager : MonoBehaviour
     private void StartGame()
     {
         rseResetCursor.Call();
-        rseMainMenu.Call(false);
         rseGame.Call(true);
+        rseMainMenu.Call(false);
     }
 }

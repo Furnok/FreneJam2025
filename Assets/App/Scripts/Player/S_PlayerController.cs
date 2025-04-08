@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class S_PlayerController : MonoBehaviour
 {
@@ -23,14 +21,14 @@ public class S_PlayerController : MonoBehaviour
     {
         rseMove.action += Move;
         rseSpawnPoint.action += Spawn;
-        rseReset.action += RestScript;
+        rseReset.action += ResetScript;
     }
 
     private void OnDisable()
     {
         rseMove.action -= Move;
         rseSpawnPoint.action -= Spawn;
-        rseReset.action -= RestScript;
+        rseReset.action -= ResetScript;
     }
 
     private void Update()
@@ -43,7 +41,7 @@ public class S_PlayerController : MonoBehaviour
         }
     }
 
-    private void RestScript()
+    private void ResetScript()
     {
         rb.linearVelocity = Vector3.zero;
         transform.position = new Vector3(0, 1.5f, 0);

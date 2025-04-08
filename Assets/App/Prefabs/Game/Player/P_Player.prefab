@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6696101637899669621}
-  - component: {fileID: 751407442822883648}
   - component: {fileID: 7293347607476565876}
+  - component: {fileID: 751407442822883648}
   m_Layer: 0
   m_Name: P_Player
   m_TagString: Untagged
@@ -34,24 +34,6 @@ Transform:
   - {fileID: 6003679958571542750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &751407442822883648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7275447772939703048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9527b7ddca2c7cc4d9bc296f14b89713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rb: {fileID: 7293347607476565876}
-  rseMove: {fileID: 11400000, guid: 0f225cd6fb802164fa0740bb4ce0841e, type: 2}
-  rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
-  rseSpawnPoint: {fileID: 11400000, guid: 34a42c2339a83794383fdb8e32e16788, type: 2}
-  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
 --- !u!54 &7293347607476565876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79,6 +61,24 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &751407442822883648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275447772939703048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9527b7ddca2c7cc4d9bc296f14b89713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb: {fileID: 7293347607476565876}
+  rseMove: {fileID: 11400000, guid: 0f225cd6fb802164fa0740bb4ce0841e, type: 2}
+  rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
+  rseSpawnPoint: {fileID: 11400000, guid: 34a42c2339a83794383fdb8e32e16788, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
 --- !u!1001 &474879826764016651
 PrefabInstance:
   m_ObjectHideFlags: 0
