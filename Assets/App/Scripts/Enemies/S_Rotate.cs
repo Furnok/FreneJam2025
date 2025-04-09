@@ -7,25 +7,33 @@ public class S_Rotate : MonoBehaviour
 	[Header("Settings")]
 	[SerializeField] private float timeWaitRotate;
 	[SerializeField] private float timeRotate;
+    [SerializeField] private float rotateAngle;
 
-	//[Header("References")]
-
-	//[Header("Input")]
-
-	//[Header("Output")]
-
-	private void OnEnable()
+    private void OnEnable()
 	{
-		StartCoroutine(Rotate());
+		StartCoroutine(DelayRotate());
 	}
 
-	private IEnumerator Rotate()
-	{
-		yield return new WaitForSeconds(5);
+    private void OnDisable()
+    {
+        transform.DOKill();
+        StopAllCoroutines();
+    }
 
-		transform.DOLocalRotate(new Vector3(0, -90), timeRotate).OnComplete(()=>
-		{
-			StartCoroutine(Rotate());
-		});
-	}
+    private IEnumerator DelayRotate()
+	{
+		yield return new WaitForSeconds(timeWaitRotate);
+
+		Rotate();
+    }
+
+	private void Rotate()
+	{
+        Vector3 nextRotation = transform.localEulerAngles + new Vector3(0, rotateAngle, 0);
+
+        transform.DOLocalRotate(nextRotation, timeRotate).OnComplete(() =>
+        {
+            StartCoroutine(DelayRotate());
+        });
+    }
 }

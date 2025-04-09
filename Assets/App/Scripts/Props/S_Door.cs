@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 public class S_Door : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class S_Door : MonoBehaviour
     {
         rseOpenDoor.action -= HandleDoor;
         rseReset.action -= ResetScript;
+
+        transform.DOKill();
     }
 
     private void ResetScript()
@@ -43,15 +46,20 @@ public class S_Door : MonoBehaviour
         }
     }
 
+    private void DoMove(Transform transform, float value, float time)
+    {
+        transform.DOLocalMoveX(value, time);
+    }
+
     private void OpenDoor()
     {
-        doorLeft.DOLocalMoveX(-3, timeAnim);
-        doorRight.DOLocalMoveX(3, timeAnim);
+        DoMove(doorLeft, -3, timeAnim);
+        DoMove(doorRight, 3, timeAnim);
     }
 
     private void CloseDoor(float time)
     {
-        doorLeft.DOLocalMoveX(-1, time);
-        doorRight.DOLocalMoveX(1, time);
+        DoMove(doorLeft, -1, timeAnim);
+        DoMove(doorRight, 1, timeAnim);
     }
 }

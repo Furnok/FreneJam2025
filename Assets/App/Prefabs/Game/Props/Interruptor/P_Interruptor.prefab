@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagPlayer: Player
+  timeAnim: 2
+  button: {fileID: 8497216470142949482}
   rseInterraction: {fileID: 11400000, guid: 766466c0d7f1d9d4286733a1ff606e5d, type: 2}
   rseOpenDoor: {fileID: 11400000, guid: 85b975ab9a311e048b15c5d3f8a3d9db, type: 2}
 --- !u!1001 &2278282987328058530
@@ -89,7 +91,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7670258065470991560, guid: 040981bf02c1b8b419733367e8a20748, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7670258065470991560, guid: 040981bf02c1b8b419733367e8a20748, type: 3}
       propertyPath: m_LocalPosition.z
