@@ -16,6 +16,7 @@ public class S_UIGameManager : MonoBehaviour
     [SerializeField] private RSE_UIInterract rseUIInterract;
     [SerializeField] private RSE_TakeItem rseTakeItem;
     [SerializeField] private RSE_Error rseError;
+    [SerializeField] private RSE_Reset rseReset;
 
     [Header("Output")]
     [SerializeField] private RSE_HideMouseCursor rseHideMouseCursor;
@@ -28,6 +29,7 @@ public class S_UIGameManager : MonoBehaviour
         rseUIInterract.action += HandleUIInterract;
         rseTakeItem.action += UpdateUI;
         rseError.action += ShowError;
+        rseReset.action += ResetScript;
 
         rseHideMouseCursor.Call();
         rsoItem.Value = 0;
@@ -40,6 +42,19 @@ public class S_UIGameManager : MonoBehaviour
         rseUIInterract.action -= HandleUIInterract;
         rseTakeItem.action -= UpdateUI;
         rseError.action -= ShowError;
+        rseReset.action -= ResetScript;
+    }
+
+    private void ResetScript()
+    {
+        if (errorCoroutine != null)
+        {
+            panelError.SetActive(false);
+            StopCoroutine(errorCoroutine);
+            errorCoroutine = null;
+        }
+
+        HandleUIInterract(false);
     }
 
     private void UpdateUI()

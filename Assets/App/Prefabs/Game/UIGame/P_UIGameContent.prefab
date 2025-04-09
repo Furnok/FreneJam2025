@@ -53,6 +53,7 @@ MonoBehaviour:
   rseUIInterract: {fileID: 11400000, guid: 2ddf0d15e320fad44b739c9d97d3bd12, type: 2}
   rseTakeItem: {fileID: 11400000, guid: 59ff2bb86a2c92a4aadfc5b9331b52ab, type: 2}
   rseError: {fileID: 11400000, guid: bdc625cedbad5bb4dba37354ccb83d7f, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
   rseHideMouseCursor: {fileID: 11400000, guid: 65625a4695bd7a445b598aca970f8a92, type: 2}
   ssoItemNumber: {fileID: 11400000, guid: 2b58d216518cd8845adae68a6ae63fd3, type: 2}
 --- !u!1001 &4557305990370034820
