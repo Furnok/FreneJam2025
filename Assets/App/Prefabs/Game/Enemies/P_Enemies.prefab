@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 7013608453363178493}
   - component: {fileID: 1842630603501029278}
   - component: {fileID: 2797339125890088521}
+  - component: {fileID: 4492347546705417527}
   m_Layer: 0
   m_Name: P_Enemies
   m_TagString: Untagged
@@ -289,6 +290,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
+--- !u!114 &4492347546705417527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928542438556984684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63de4297cc6827d4598f8912c5ec2c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeWaitRotate: 5
+  timeRotate: 2
 --- !u!1 &4131387098680774574
 GameObject:
   m_ObjectHideFlags: 0
