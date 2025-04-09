@@ -8,25 +8,16 @@ Those prefabs must be properly separated in terms of responsibility.
 - Single Scene : make that game on only one scene and keep things organized on it.
 
 
-Shadow Strike – Stealth Game with Input Lag
+Shadow Strike - Stealth game with Input Lag
 
-Core Concept:
-- You play as a futuristic ninja or spy infiltrating a high-security facility. However, due to a cybernetic malfunction, all your movements and actions have a 1-second delay. You must anticipate guard movements, time your actions carefully, and use tools to outsmart enemies.
+- You can move with ZQSD.
 
-Core Mechanics:
+- You must pick up the object (green object) and return to the exit to finish the level.
 
-1. Movement & Input Delay
-- Every movement command (walking, running) happens 1 second after input.
+- Watch out for enemies - if they see you, it's Game Over.
 
-2. Vision & Stealth
-- Guards have vision cones, and you must predict their patrol routes.
-- You can use cover or hide to remain unseen.
+- You can interact with object with the “E” key.
 
-3. Gadgets & Tools
-- Interruptor Device – Open doors.
+- There's a switch (yellow object) that can open or close a door to unlocks a shortcut.
 
-4. Level Design
-- One single scene (a large, multi-layered facility).
-
-5. Enemies & AI
-- Guards react dynamically to sight.
+- You can open the menu with the “Escape” key.
