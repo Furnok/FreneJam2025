@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b50a30d5b0cc9641a3a9a823b542b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
   rseMenu: {fileID: 11400000, guid: cf2c8b457296f4648a496a09bd255215, type: 2}
   ssoDelayInputs: {fileID: 11400000, guid: deaa33f6031c9f4428704feb4bf64a49, type: 2}
   rseMove: {fileID: 11400000, guid: 0f225cd6fb802164fa0740bb4ce0841e, type: 2}
