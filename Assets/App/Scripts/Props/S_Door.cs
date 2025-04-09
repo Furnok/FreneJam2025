@@ -48,7 +48,7 @@ public class S_Door : MonoBehaviour
 
     private void DoMove(Transform transform, float value, float time)
     {
-        transform.DOLocalMoveX(value, time);
+        transform.DOLocalMoveX(value, time).SetEase(Ease.Linear);
     }
 
     private void OpenDoor()

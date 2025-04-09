@@ -31,7 +31,9 @@ public class S_Rotate : MonoBehaviour
 	{
         Vector3 nextRotation = transform.localEulerAngles + new Vector3(0, rotateAngle, 0);
 
-        transform.DOLocalRotate(nextRotation, timeRotate).OnComplete(() =>
+        transform.DOLocalRotate(nextRotation, timeRotate)
+        .SetEase(Ease.Linear)
+        .OnComplete(() =>
         {
             StartCoroutine(DelayRotate());
         });

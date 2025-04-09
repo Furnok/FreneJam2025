@@ -56,7 +56,7 @@ public class S_Interruptor : MonoBehaviour
 
     private void DoMove(Transform transform, float value, float time)
     {
-        transform.DOLocalMoveY(value, time);
+        transform.DOLocalMoveY(value, time).SetEase(Ease.Linear);
     }
 
     private void Interract()
