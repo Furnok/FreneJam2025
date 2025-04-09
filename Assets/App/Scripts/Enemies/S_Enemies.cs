@@ -6,16 +6,57 @@ public class S_Enemies : MonoBehaviour
     [SerializeField] private float viewRadius;
     [SerializeField, Range(0, 360)] private float viewAngle;
     [SerializeField] private LayerMask obstacleMask;
+    [SerializeField, S_TagName] private string tagPlayer;
+
+    [Header("Input")]
+    [SerializeField] private RSE_Reset rseReset;
 
     [Header("Output")]
     [SerializeField] private RSO_Player rsoPlayer;
 
+    private bool isPlayerInRadius = false;
+
+    private void OnEnable()
+    {
+        rseReset.action += ResetScript;
+    }
+
+    private void OnDisable()
+    {
+        rseReset.action -= ResetScript;
+    }
+
+
     private void Update()
     {
-        if (CanSeePlayer())
+        if (isPlayerInRadius)
         {
-            Debug.Log("Player spotted!");
+            if (CanSeePlayer())
+            {
+                Debug.Log("Player spotted!");
+            }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(tagPlayer))
+        {
+            isPlayerInRadius = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(tagPlayer))
+        {
+            isPlayerInRadius = false;
+        }
+    }
+
+    private void ResetScript()
+    {
+        isPlayerInRadius = false;
     }
 
     public bool CanSeePlayer()

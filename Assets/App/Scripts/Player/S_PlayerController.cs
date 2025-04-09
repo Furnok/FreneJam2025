@@ -33,11 +33,14 @@ public class S_PlayerController : MonoBehaviour
 
     private void Update()
     {
+        rsoPlayer.Value = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
         if (isSpawn)
         {
             rb.linearVelocity = new Vector3(currentMove.x * speed, transform.position.y, currentMove.y * speed);
-
-            rsoPlayer.Value = transform.position;
         }
     }
 
