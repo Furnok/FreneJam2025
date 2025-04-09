@@ -7,10 +7,6 @@ public class S_Enemies : MonoBehaviour
     [SerializeField, Range(0, 360)] private float viewAngle;
     [SerializeField] private LayerMask obstacleMask;
 
-    //[Header("References")]
-
-    //[Header("Input")]
-
     [Header("Output")]
     [SerializeField] private RSO_Player rsoPlayer;
 

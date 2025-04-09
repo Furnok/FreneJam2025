@@ -614,7 +614,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3928542438556984684, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_Name
-      value: Enemies (4)
+      value: Enemies1 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7013608453363178493, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_LocalPosition.x
@@ -890,7 +890,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3928542438556984684, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_Name
-      value: Enemies (3)
+      value: Enemies1 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7013608453363178493, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1116,7 +1116,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3928542438556984684, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_Name
-      value: Enemies (2)
+      value: Enemies1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7013608453363178493, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1414,7 +1414,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3928542438556984684, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_Name
-      value: Enemies (1)
+      value: Enemies1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7013608453363178493, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1683,7 +1683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2263521986968018519, guid: 7d14138b87a24fe46b927a555057a0d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2263521986968018519, guid: 7d14138b87a24fe46b927a555057a0d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7419,7 +7419,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3928542438556984684, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_Name
-      value: Enemies
+      value: Enemies1
       objectReference: {fileID: 0}
     - target: {fileID: 7013608453363178493, guid: fa9f9de03cbdfef4283eec9fe7675279, type: 3}
       propertyPath: m_LocalPosition.x
