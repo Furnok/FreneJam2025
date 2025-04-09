@@ -9,14 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8824658494632995594}
-  - component: {fileID: 7565549851288858430}
   m_Layer: 0
   m_Name: P_World1Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8824658494632995594
 Transform:
   m_ObjectHideFlags: 0
@@ -36,20 +35,6 @@ Transform:
   - {fileID: 8406952443840692924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7565549851288858430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2892044883267595155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0df7c2bdc547c4b919c1e26952ec9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rsoItem: {fileID: 11400000, guid: b8ffd07c60a4f48459eee1ca1cbb602f, type: 2}
-  rseHideMouseCursor: {fileID: 11400000, guid: 65625a4695bd7a445b598aca970f8a92, type: 2}
 --- !u!1001 &177102024897945423
 PrefabInstance:
   m_ObjectHideFlags: 0

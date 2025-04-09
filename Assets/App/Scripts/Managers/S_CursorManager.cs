@@ -88,6 +88,8 @@ public class S_CursorManager : MonoBehaviour
 
     private void ResetCursor()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }

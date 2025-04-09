@@ -13,6 +13,10 @@ public class S_ItemLevel : MonoBehaviour
     [SerializeField] private RSO_Item rsoItem;
     [SerializeField] private RSE_Reset rseReset;
 
+    [Header("Output")]
+    [SerializeField] private RSE_UIInterract rseUIInterract;
+    [SerializeField] private RSE_TakeItem rseTakeItem;
+
     private bool isTaken = false;
 
     private void OnEnable()
@@ -28,9 +32,10 @@ public class S_ItemLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(tagPlayer))
+        if (other.CompareTag(tagPlayer) && !isTaken)
         {
             rseInterraction.action += Interract;
+            rseUIInterract.Call(true);
         }
     }
 
@@ -39,6 +44,7 @@ public class S_ItemLevel : MonoBehaviour
         if (other.CompareTag(tagPlayer))
         {
             rseInterraction.action -= Interract;
+            rseUIInterract.Call(false);
         }
     }
 
@@ -50,11 +56,13 @@ public class S_ItemLevel : MonoBehaviour
 
     private void Interract()
     {
-        if (!rsoItem.Value && !isTaken)
+        if (!isTaken)
         {
             isTaken = true;
             item.SetActive(false);
-            rsoItem.Value = true;
+            rsoItem.Value += 1;
+            rseUIInterract.Call(false);
+            rseTakeItem.Call();
         }
     }
 }

@@ -12,6 +12,9 @@ public class S_DoorExit : MonoBehaviour
     [SerializeField] private RSO_Item rsoItem;
     [SerializeField] private RSE_MainMenu rseMainMenu;
     [SerializeField] private RSE_Game rseGame;
+    [SerializeField] private RSE_UIInterract rseUIInterract;
+    [SerializeField] private SSO_ItemNumber ssoItemNumber;
+    [SerializeField] private RSE_Error rseError;
 
     private void OnDisable()
     {
@@ -23,6 +26,7 @@ public class S_DoorExit : MonoBehaviour
         if (other.CompareTag(tagPlayer))
         {
             rseInterraction.action += Interract;
+            rseUIInterract.Call(true);
         }
     }
 
@@ -31,19 +35,20 @@ public class S_DoorExit : MonoBehaviour
         if (other.CompareTag(tagPlayer))
         {
             rseInterraction.action -= Interract;
+            rseUIInterract.Call(false);
         }
     }
 
     private void Interract()
     {
-        if (rsoItem.Value)
+        if (rsoItem.Value >= ssoItemNumber.Value)
         {
             rseGame.Call(false);
             rseMainMenu.Call(true);
         }
         else
         {
-            Debug.Log("You don't have the Item");
+            rseError.Call();
         }
     }
 }

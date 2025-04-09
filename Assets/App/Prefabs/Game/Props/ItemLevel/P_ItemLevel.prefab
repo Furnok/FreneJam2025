@@ -73,6 +73,8 @@ MonoBehaviour:
   rseInterraction: {fileID: 11400000, guid: 766466c0d7f1d9d4286733a1ff606e5d, type: 2}
   rsoItem: {fileID: 11400000, guid: b8ffd07c60a4f48459eee1ca1cbb602f, type: 2}
   rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
+  rseUIInterract: {fileID: 11400000, guid: 2ddf0d15e320fad44b739c9d97d3bd12, type: 2}
+  rseTakeItem: {fileID: 11400000, guid: 59ff2bb86a2c92a4aadfc5b9331b52ab, type: 2}
 --- !u!1001 &1282322392523800837
 PrefabInstance:
   m_ObjectHideFlags: 0

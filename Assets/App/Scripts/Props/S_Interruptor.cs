@@ -17,6 +17,7 @@ public class S_Interruptor : MonoBehaviour
 
     [Header("Output")]
     [SerializeField] private RSE_OpenDoor rseOpenDoor;
+    [SerializeField] private RSE_UIInterract rseUIInterract;
 
     private bool isActive = false;
 
@@ -38,6 +39,7 @@ public class S_Interruptor : MonoBehaviour
         if (other.CompareTag(tagPlayer))
         {
             rseInterraction.action += Interract;
+            rseUIInterract.Call(true);
         }
     }
 
@@ -46,6 +48,7 @@ public class S_Interruptor : MonoBehaviour
         if (other.CompareTag(tagPlayer))
         {
             rseInterraction.action -= Interract;
+            rseUIInterract.Call(false);
         }
     }
 

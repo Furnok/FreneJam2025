@@ -48,7 +48,6 @@ MonoBehaviour:
   contentMainMenu: {fileID: 5213371639602148621}
   rseMainMenu: {fileID: 11400000, guid: fa695a0035bf6014faf3a7718714b614, type: 2}
   ssoMainMenuMode: {fileID: 11400000, guid: 6af2a9df7fbfd764199d8fb4383b5864, type: 2}
-  rseShowMouseCursor: {fileID: 11400000, guid: 437f34f121ce5d9468823e0dd113e03d, type: 2}
 --- !u!1001 &8985534081848405299
 PrefabInstance:
   m_ObjectHideFlags: 0
