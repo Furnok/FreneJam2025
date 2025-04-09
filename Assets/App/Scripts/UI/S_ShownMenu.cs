@@ -13,6 +13,7 @@ public class S_ShownMenu : MonoBehaviour
     [SerializeField] private RSE_ResetCursor rseResetCursor;
     [SerializeField] private RSE_ShowMouseCursor rseShowMouseCursor;
     [SerializeField] private RSE_HideMouseCursor rseHideMouseCursor;
+    [SerializeField] private RSO_Dead rsoDead;
 
     private bool isInGame;
 
@@ -35,18 +36,21 @@ public class S_ShownMenu : MonoBehaviour
 
     private void Menu()
     {
-        if (!contentMenu.activeInHierarchy && isInGame)
+        if (!rsoDead.Value)
         {
-            rseShowMouseCursor.Call();
-            contentMenu.SetActive(true);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            rseResetCursor.Call();
-            rseHideMouseCursor.Call();
-            Time.timeScale = 1;
-            contentMenu.SetActive(false);
+            if (!contentMenu.activeInHierarchy && isInGame)
+            {
+                rseShowMouseCursor.Call();
+                contentMenu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                rseResetCursor.Call();
+                rseHideMouseCursor.Call();
+                Time.timeScale = 1;
+                contentMenu.SetActive(false);
+            }
         }
     }
 }

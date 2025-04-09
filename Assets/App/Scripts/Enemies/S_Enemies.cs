@@ -10,9 +10,11 @@ public class S_Enemies : MonoBehaviour
 
     [Header("Input")]
     [SerializeField] private RSE_Reset rseReset;
+    [SerializeField] private RSO_Dead rsoDead;
 
     [Header("Output")]
     [SerializeField] private RSO_Player rsoPlayer;
+    [SerializeField] private RSE_Dead rseDead;
 
     private bool isPlayerInRadius = false;
 
@@ -30,9 +32,10 @@ public class S_Enemies : MonoBehaviour
     {
         if (isPlayerInRadius)
         {
-            if (CanSeePlayer())
+            if (CanSeePlayer() && !rsoDead.Value)
             {
-                Debug.Log("Player spotted!");
+                rsoDead.Value = true;
+                rseDead.Call(true);
             }
         }
     }

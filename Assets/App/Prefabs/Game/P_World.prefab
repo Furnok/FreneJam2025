@@ -50,6 +50,7 @@ MonoBehaviour:
   - {fileID: 8373470265330899803}
   rseGame: {fileID: 11400000, guid: 088bc88104ff49a45804a812d19b8158, type: 2}
   rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
+  rsoDead: {fileID: 11400000, guid: 6bd38a0ebee72544f976a63d927029ae, type: 2}
   ssoMainMenuMode: {fileID: 11400000, guid: 6af2a9df7fbfd764199d8fb4383b5864, type: 2}
 --- !u!1001 &6635510517920084168
 PrefabInstance:

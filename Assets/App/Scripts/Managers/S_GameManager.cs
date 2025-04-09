@@ -5,6 +5,7 @@ public class S_GameManager : MonoBehaviour
     [Header("Input")]
     [SerializeField] private RSE_BackToMainMenu rseBackToMainMenu;
     [SerializeField] private RSE_QuitGame rseQuitGame;
+    [SerializeField] private RSO_Dead rsoDead;
 
     [Header("Output")]
     [SerializeField] private RSE_ResetCursor rseResetCursor;
@@ -12,6 +13,7 @@ public class S_GameManager : MonoBehaviour
     [SerializeField] private RSE_Menu rseMenu;
     [SerializeField] private RSE_Game rseGame;
     [SerializeField] private RSE_Reset rseReset;
+    [SerializeField] private RSE_Dead rseDead;
 
     private void OnEnable()
     {
@@ -31,7 +33,9 @@ public class S_GameManager : MonoBehaviour
         rseMenu.Call();
         rseReset.Call();
         rseMainMenu.Call(true);
+        rsoDead.Value = false;
         rseGame.Call(false);
+        rseDead.Call(false);
     }
 
     private void QuitGame()

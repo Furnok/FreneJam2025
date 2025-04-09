@@ -12,6 +12,7 @@ public class S_ShowGame : MonoBehaviour
     [Header("Input")]
     [SerializeField] private RSE_Game rseGame;
     [SerializeField] private RSO_Player rsoPlayer;
+    [SerializeField] private RSO_Dead rsoDead;
 
     [Header("Output")]
     [SerializeField] private SSO_MainMenuMode ssoMainMenuMode;
@@ -21,6 +22,7 @@ public class S_ShowGame : MonoBehaviour
     private void Awake()
     {
         rsoPlayer.Value = new();
+        rsoDead.Value = new();
         indexLevel = startIndexLevel;
     }
 

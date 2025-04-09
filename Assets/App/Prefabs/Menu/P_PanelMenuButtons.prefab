@@ -207,17 +207,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 943233809553949279, guid: 19f4fbbb2d18f6b46bbc4fd6e3979dcb, type: 3}
   m_PrefabInstance: {fileID: 1446760571945304263}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4603510828063711532 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3166340213902516715, guid: 19f4fbbb2d18f6b46bbc4fd6e3979dcb, type: 3}
-  m_PrefabInstance: {fileID: 1446760571945304263}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3633259362765470538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,14 +299,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7872135955618629156, guid: cf776bda747181d4baecede296b87def, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 4603510828063711532}
-    - target: {fileID: 7872135955618629156, guid: cf776bda747181d4baecede296b87def, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 4603510828063711532}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -420,14 +401,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9195992392141076639, guid: bc27e7b10741237469576b39f43a36d3, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 4603510828063711532}
-    - target: {fileID: 9195992392141076639, guid: bc27e7b10741237469576b39f43a36d3, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 4603510828063711532}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
