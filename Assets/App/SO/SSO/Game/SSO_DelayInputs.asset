@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9342ddb91545d438a957cfe4dd207a, type: 3}
   m_Name: SSO_DelayInputs
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1

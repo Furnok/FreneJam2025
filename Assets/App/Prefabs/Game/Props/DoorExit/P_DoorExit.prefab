@@ -77,6 +77,7 @@ MonoBehaviour:
   rseUIInterract: {fileID: 11400000, guid: 2ddf0d15e320fad44b739c9d97d3bd12, type: 2}
   ssoItemNumber: {fileID: 11400000, guid: 2b58d216518cd8845adae68a6ae63fd3, type: 2}
   rseError: {fileID: 11400000, guid: bdc625cedbad5bb4dba37354ccb83d7f, type: 2}
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
 --- !u!1001 &1397699440187491703
 PrefabInstance:
   m_ObjectHideFlags: 0

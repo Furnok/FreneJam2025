@@ -15,6 +15,7 @@ public class S_DoorExit : MonoBehaviour
     [SerializeField] private RSE_UIInterract rseUIInterract;
     [SerializeField] private SSO_ItemNumber ssoItemNumber;
     [SerializeField] private RSE_Error rseError;
+    [SerializeField] private RSE_Reset rseReset;
 
     private void OnDisable()
     {
@@ -43,6 +44,7 @@ public class S_DoorExit : MonoBehaviour
     {
         if (rsoItem.Value >= ssoItemNumber.Value)
         {
+            rseReset.Call();
             rseGame.Call(false);
             rseMainMenu.Call(true);
         }

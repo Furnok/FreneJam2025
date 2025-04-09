@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18035ce18c0593e41817e715b69075d0, type: 3}
   m_Name: SSO_MainMenuMode
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1
