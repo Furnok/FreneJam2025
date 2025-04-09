@@ -26,7 +26,6 @@ public class S_Enemies : MonoBehaviour
         rseReset.action -= ResetScript;
     }
 
-
     private void Update()
     {
         if (isPlayerInRadius)

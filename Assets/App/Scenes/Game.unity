@@ -4646,7 +4646,8 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 64
-  tagPlayer: 
+  tagPlayer: Player
+  rseReset: {fileID: 11400000, guid: 5fb7c9dbb015fdf4c94a5ae571ff22bf, type: 2}
   rsoPlayer: {fileID: 11400000, guid: 30fcb08a76046f1489f994deebb97a62, type: 2}
 --- !u!1001 &3254300724662798002
 PrefabInstance:
@@ -6147,7 +6148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 928007546e56c8749a055e9f912c68ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
