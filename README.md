@@ -8,6 +8,7 @@ Those prefabs must be properly separated in terms of responsibility.
 - Single Scene : make that game on only one scene and keep things organized on it.
 
 
+
 Shadow Strike - Stealth game with Input Lag
 
 - You can move with ZQSD.
